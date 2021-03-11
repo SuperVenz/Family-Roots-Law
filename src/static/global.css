@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap");
+body {
+  font-family: "Libre Caslon Text", serif;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 29px;
+}
+p {
+  font-size: 1em;
+}
+.Hero {
+  height: 50vh;
+}

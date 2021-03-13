@@ -3,7 +3,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import queryString from "query-string";
-
+import { navigate } from "gatsby";
 const Form = styled.form`
   display: flex;
   flex-flow: column nowrap;
@@ -42,26 +42,30 @@ function ContactForm(props) {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [area, setArea] = useState("");
-  const [serverState, setServerState] = useState({
-    submitting: false,
-    status: null,
-  });
-  let formData = {
-    "form-name": "contact",
-    "Content-Type": "application/x-www-form-urlencoded",
-    name: name,
-    address: address,
-    email: email,
-    phone: phone,
-  };
-  const dataToSend = queryString.stringify(formData);
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
 
-  const handleOnSubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": event.target.getAttribute("name"),
+        ...name,
+      }),
+    })
+      .then(() => navigate("/thankyou"))
+      .catch((error) => alert(error));
   };
   return (
     <Form
+      id="contact"
       netlify-honeypot="bot-field"
       name="contact"
       method="POST"

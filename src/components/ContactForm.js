@@ -2,17 +2,8 @@ import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
 import Button from "./Button";
+import queryString from "query-string";
 
-function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
-
-const handleSubmit = (e) => {
-  e.preventDefault();
-  const form = e.target;
-};
 const Form = styled.form`
   display: flex;
   flex-flow: column nowrap;
@@ -55,25 +46,30 @@ function ContactForm(props) {
     submitting: false,
     status: null,
   });
-  const handleServerResponse = (ok, msg) => {
-    setServerState({
-      submitting: false,
-      status: { ok, msg },
-    });
-    if (ok) {
-      setName("");
-      setEmail("");
-      setPhone("");
-      setArea("");
-    }
+  let formData = {
+    "form-name": "contact",
+    "Content-Type": "application/x-www-form-urlencoded",
+    name: name,
+    address: address,
+    email: email,
+    phone: phone,
   };
+  const dataToSend = queryString.stringify(formData);
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
   };
   return (
-    <Form name="contact" method="POST" data-netlify="true">
+    <Form
+      netlify-honeypot="bot-field"
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      action="/thankyou"
+    >
+      <input name="form-name" value="Netlify Rocks" type="hidden" />
+      <input type="hidden" name="bot-field" />
       <Label for="name">
         Name <br></br>
         <StringInput

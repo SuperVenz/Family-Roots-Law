@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import Button from "./Button";
-import queryString from "query-string";
+
 import { navigate } from "gatsby";
 const Form = styled.form`
   display: flex;
@@ -56,8 +55,11 @@ function ContactForm(props) {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": event.target.getAttribute("name"),
-        ...name,
+        "form-name": "contact",
+        name: name,
+        address: address,
+        email: email,
+        phone: phone,
       }),
     })
       .then(() => navigate("/thankyou"))
@@ -116,7 +118,9 @@ function ContactForm(props) {
           onChange={(e) => setEmail(e.target.value)}
         ></StringInput>
       </Label>
-      <Submit type="submit">Submit</Submit>
+      <Submit type="submit" onSubmit={handleSubmit}>
+        Submit
+      </Submit>
     </Form>
   );
 }

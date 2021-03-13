@@ -71,6 +71,7 @@ function ContactForm(props) {
       method="POST"
       data-netlify="true"
       action="/thankyou"
+      onSubmit={handleSubmit}
     >
       <input name="form-name" value="Netlify Rocks" type="hidden" />
       <input type="hidden" name="bot-field" />

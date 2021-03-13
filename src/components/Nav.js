@@ -28,10 +28,10 @@ function Nav(props) {
         <Link to="/about">
           <NavButton>About</NavButton>
         </Link>
-        <Link to="/practice">
+        <Link to="/services">
           <NavButton>Practice Areas</NavButton>
         </Link>
-        <Link to="/">
+        <Link to="/contact">
           <NavButton>Contact Me</NavButton>
         </Link>
         <Link to="/">

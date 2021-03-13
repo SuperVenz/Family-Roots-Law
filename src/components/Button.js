@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-
+const Wrapper = styled.div`
+  padding-left: 2em;
+  padding-bottom: 7em;
+`;
 const CustomButton = styled.button`
   padding-top: 0.5em;
-  margin: 1em;
   padding-bottom: 0.5em;
   padding-left: 2em;
   padding-right: 2em;
@@ -14,7 +16,11 @@ const CustomButton = styled.button`
   font-size: 1.5em;
 `;
 function Button({ tag }) {
-  return <CustomButton>{tag}</CustomButton>;
+  return (
+    <Wrapper>
+      <CustomButton>{tag}</CustomButton>
+    </Wrapper>
+  );
 }
 
 export default Button;

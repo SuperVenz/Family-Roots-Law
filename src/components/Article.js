@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 const Title = styled.h2`
   font-weight: bold;
   padding-bottom: 1em;
-  font-size: 2.5em;
+  font-size: 2.3em;
   line-height: 1em;
 `;
 const Text = styled.p`

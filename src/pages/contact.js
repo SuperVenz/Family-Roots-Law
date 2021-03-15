@@ -8,12 +8,12 @@ import ContactForm from "../components/ContactForm";
 
 const Title = styled.h1`
   font-weight: bold;
-  font-size: 2.5em;
-  line-height: 1em;
-  padding-top: 1em;
-  padding-left: 1em;
+  font-size: 2.5rem;
+  line-height: 1rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
 `;
-const SubTitle = styled.h3`
+const SubTitle = styled.span`
   padding-bottom: 1em;
   font-weight: bold;
   font-size: 1.5em;
@@ -31,20 +31,21 @@ const ContactPage = () => (
       />
       <Title>Contact Me</Title>
       <Article>
-        <SubTitle>Phone Call</SubTitle>
+        <SubTitle>Phone Call</SubTitle> <br></br>
         You can reach my office at (442) 500-5177, Monday – Friday between the
         hours. 8:00am – 5:30pm (PC)
         <br></br>
         <a href="tel:4425005177">(442) 500-5177</a>
       </Article>
-
       <Article>
         <SubTitle>Email Discussion</SubTitle>
+        <br></br>
         If you need to contact me through email, you can reach me at
         <a href="mailto: Mindy@familyrootslaw.com"> Mindy@familyrootslaw.com</a>
       </Article>
       <Article>
         <SubTitle>Schedule A Consultation</SubTitle>
+        <br></br>
         Please provide the information below to schedule a consultation.
       </Article>
       <ContactForm />

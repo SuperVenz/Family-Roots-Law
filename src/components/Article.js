@@ -4,11 +4,11 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 2em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
   line-height: 1.5em;
-  padding-top: 2em;
+  padding-top: 1.5rem;
 `;
 const Title = styled.h2`
   font-weight: bold;

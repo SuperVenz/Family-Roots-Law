@@ -4,6 +4,9 @@ import { StaticImage } from "gatsby-plugin-image";
 import Nav from "./Nav";
 const Wrapper = styled.div`
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 50;
   flex-flow: column nowrap;
   padding-left: 2em;
   padding-top: 2em;

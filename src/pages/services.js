@@ -14,7 +14,7 @@ const Title = styled.h1`
 const Block = styled.div`
   margin-bottom: 5em;
 `;
-const SubTitle = styled.h3`
+const SubTitle = styled.p`
   padding-bottom: 1em;
   font-weight: bold;
   font-size: 1.5em;

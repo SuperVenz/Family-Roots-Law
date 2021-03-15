@@ -1,26 +1,42 @@
 import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-
+import Select from "react-select";
 import { navigate } from "gatsby";
 const Form = styled.form`
   display: flex;
   flex-flow: column nowrap;
   padding-left: 2em;
+  padding-bottom: 2rem;
 `;
 const Label = styled.label`
   padding-bottom: 2em;
   font-weight: bold;
+  padding-right: 2em;
+`;
+const Text = styled.p``;
+const AreaLabel = styled.label`
+  font-weight: bold;
+  height: 120px;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  padding-bottom: 2em;
 `;
 const StringInput = styled.input`
-  margin-top: 10px;
   padding: 1em;
+  padding-left: 1em;
   width: 80%;
   border: solid #e4e4e4 2px;
   border-radius: 12px;
 `;
-const Area = styled.input``;
-
+const AreaText = styled.textarea`
+  padding: 1em;
+  height 4em;
+  width: 80%;
+  border: solid #e4e4e4 2px;
+  border-radius: 12px;
+`;
 const Submit = styled.button`
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -41,6 +57,27 @@ function ContactForm(props) {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [area, setArea] = useState("");
+  const [time, setTime] = useState("");
+  const [description, setDescription] = useState("");
+
+  const options = [
+    { value: "Estate Planning", label: "Estate Planning" },
+    {
+      value: "Trust and Probate Administration",
+      label: "Trust and Probate Admininstration",
+    },
+    {
+      value: "Limited Conservatorships and Conservatorships",
+      label: "Limited Conservatorships and Conservatorships",
+    },
+    {
+      value: "Beneficiary Representation",
+      label: "Beneficiary Representation",
+    },
+  ];
+  const handleSelect = (event) => {
+    setArea(event);
+  };
   function encode(data) {
     return Object.keys(data)
       .map(
@@ -60,6 +97,8 @@ function ContactForm(props) {
         address: address,
         email: email,
         phone: phone,
+        time: time,
+        area: area,
       }),
     })
       .then(() => navigate("/thankyou"))
@@ -68,6 +107,7 @@ function ContactForm(props) {
   return (
     <Form
       id="contact"
+      autoComplete="on"
       netlify-honeypot="bot-field"
       name="contact"
       method="POST"
@@ -78,7 +118,7 @@ function ContactForm(props) {
       <input name="form-name" value="Netlify Rocks" type="hidden" />
       <input type="hidden" name="bot-field" />
       <Label for="name">
-        Name <br></br>
+        <Text>Name</Text> <br></br>
         <StringInput
           type="text"
           name="name"
@@ -88,7 +128,7 @@ function ContactForm(props) {
         ></StringInput>
       </Label>
       <Label for="address">
-        Home Address <br></br>
+        <Text>Home Address</Text> <br></br>
         <StringInput
           type="text"
           name="address"
@@ -98,7 +138,7 @@ function ContactForm(props) {
         ></StringInput>
       </Label>
       <Label for="phone">
-        Phone Number <br></br>
+        <Text>Phone Number</Text> <br></br>
         <StringInput
           type="tel"
           name="phone"
@@ -109,7 +149,7 @@ function ContactForm(props) {
         ></StringInput>
       </Label>
       <Label for="email">
-        Email <br></br>
+        <Text>Email</Text> <br></br>
         <StringInput
           type="email"
           name="name"
@@ -118,6 +158,37 @@ function ContactForm(props) {
           onChange={(e) => setEmail(e.target.value)}
         ></StringInput>
       </Label>
+      <Label for="time">
+        <Text>Best Time Too Contact</Text> <br></br>
+        <StringInput
+          type="text"
+          name="time"
+          placeholder="monday-friday, 3-6pm etc"
+          value={time}
+          onChange={(e) => setTime(e.target.value)}
+        ></StringInput>
+      </Label>
+      <Label for="area">
+        <Text>Practice Area</Text>
+        <br></br>
+        <Select
+          options={options}
+          value={area}
+          onChange={handleSelect}
+          closeMenuOnScroll="true"
+        />
+      </Label>
+      <AreaLabel for="description">
+        <Text>Message</Text>
+        <br></br>
+        <AreaText
+          name="description"
+          rows="4"
+          cols="20"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+        ></AreaText>
+      </AreaLabel>
       <Submit type="submit" onSubmit={handleSubmit}>
         Submit
       </Submit>

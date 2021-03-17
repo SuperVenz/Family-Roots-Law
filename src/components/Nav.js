@@ -20,25 +20,28 @@ const Div = styled.div`
   justify-content: space-between;
   padding-right: 16px;
 `;
+const StyledLink = styled((props) => <Link {...props} />)`
+  text-decoration: none;
+`;
 
 function Nav(props) {
   return (
     <Navigation>
       <Div>
-        <Link to="/about">
+        <StyledLink to="/about">
           <NavButton>About</NavButton>
-        </Link>
-        <Link to="/services">
+        </StyledLink>
+        <StyledLink to="/services">
           <NavButton>Practice Areas</NavButton>
-        </Link>
-        <Link to="/contact">
+        </StyledLink>
+        <StyledLink to="/contact">
           <NavButton>Contact Me</NavButton>
-        </Link>
-        <Link to="/">
+        </StyledLink>
+        <StyledLink to="/">
           <NavButton>
             <Phone />
           </NavButton>
-        </Link>
+        </StyledLink>
       </Div>
     </Navigation>
   );

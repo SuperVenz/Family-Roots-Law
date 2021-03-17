@@ -8,8 +8,8 @@ const Title = styled.h1`
   font-weight: bold;
   font-size: 2.5em;
   line-height: 1em;
-  padding-top: 1em;
-  padding-left: 1em;
+  padding-top: 2rem;
+  padding-left: 2rem;
 `;
 const Block = styled.div`
   margin-bottom: 5em;

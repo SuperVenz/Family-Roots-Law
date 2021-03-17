@@ -31,7 +31,7 @@ const StringInput = styled.input`
   border-radius: 12px;
 `;
 const AreaText = styled.textarea`
-  padding: 1em;
+  padding: 1rem;
   height 4em;
   width: 80%;
   border: solid #e4e4e4 2px;

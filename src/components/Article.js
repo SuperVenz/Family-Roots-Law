@@ -16,7 +16,7 @@ const Title = styled.h2`
   font-size: 2.3em;
   line-height: 1em;
 `;
-const Text = styled.p`
+const Text = styled.div`
   font-size: 1.2em;
   line-height: 1.5em;
 `;

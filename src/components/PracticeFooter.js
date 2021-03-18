@@ -34,11 +34,11 @@ const A = styled.a`
   color: white;
 `;
 
-function Footer(props) {
+function PracticeFooter(props) {
   const { placeholderImage } = useStaticQuery(
     graphql`
       {
-        placeholderImage: file(relativePath: { eq: "Footer.png" }) {
+        placeholderImage: file(relativePath: { eq: "PracticeFooter.png" }) {
           childImageSharp {
             gatsbyImageData(
               width: 200
@@ -85,4 +85,4 @@ function Footer(props) {
   );
 }
 
-export default Footer;
+export default PracticeFooter;

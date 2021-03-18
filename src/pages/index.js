@@ -62,7 +62,7 @@ const IndexPage = () => {
           explain how we can get started protecting your legacy.
         </Article>
         <Button tag="Contact Me" />
-        <Footer />
+        <Footer pic="Footer.png" />
       </Wrapper>
     </Layout>
   );

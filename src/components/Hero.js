@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "./Button";
 import { useStaticQuery, graphql } from "gatsby";
 import { convertToBgImage } from "gbimage-bridge";
 import BackgroundImage from "gatsby-background-image";

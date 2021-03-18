@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 const Wrapper = styled.div`
   padding-left: 2em;
-  padding-bottom: 7em;
+  padding-bottom: 5em;
 `;
 const CustomButton = styled.button`
   padding-top: 0.5em;

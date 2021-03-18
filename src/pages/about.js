@@ -4,6 +4,7 @@ import Article from "../components/Article";
 import styled from "styled-components";
 import Button from "../components/Button";
 import Layout from "../components/Layout";
+import AboutFooter from "../components/AboutFooter";
 
 const Margin = styled.div`
   padding-left: 2em;
@@ -63,13 +64,7 @@ const AboutPage = () => {
         </Article>
         <Button tag="Contact Me" />
 
-        <StaticImage
-          loading="eager"
-          placeholder="blurred"
-          src="../images/AboutFooter.png"
-          alt="Signature"
-          layout="fullWidth"
-        />
+        <AboutFooter />
       </main>
     </Layout>
   );

@@ -16,11 +16,15 @@ const Wrapper = styled.div`
 `;
 const Line = styled.div`
   width: 3em;
-  height: 13.5em;
+  height: 16.5em;
   background: black;
   border: solid black 1px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px max-width: 1020px) {
+    height: 25em;
     width: 2em;
+  }
+  @media screen and (min-width: 1500px) {
+    height: 15em;
   }
 `;
 const Text = styled.div`
@@ -28,6 +32,12 @@ const Text = styled.div`
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 1em;
+  @media screen and (min-width: 768px max-width: 1020px) {
+    line-height: 2.5em;
+  }
+  @media screen and (min-width: 1024px) {
+    line-height: 3em;
+  }
 `;
 const Author = styled.div`
   padding-top: 1em;

@@ -9,6 +9,9 @@ const Navigation = styled.nav`
   justify-content: space-around;
   padding-bottom: 2em;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    padding-left: 2em;
+  }
 `;
 
 const Div = styled.div`

@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import PracticeFooter from "../components/PracticeFooter";
 const Title = styled.h1`
   font-weight: bold;
+  color: black;
   font-size: 2.5em;
   line-height: 1em;
   padding-top: 2rem;
@@ -45,8 +46,8 @@ const Text = styled.div`
     flex-direction: reverse-row
     display: flex;
     flex-flow: column nowrap;
-    padding-left: 2em;
-    width: 60%;
+    width: 50%;
+    padding-right:5%;
   }
 `;
 const TextBottom = styled.div`

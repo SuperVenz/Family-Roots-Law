@@ -8,27 +8,26 @@ import ContactForm from "../components/ContactForm";
 
 const Main = styled.main`
   @media screen and (min-width: 768px) {
-    overflow-y: hidden;
   }
 `;
 const Title = styled.h1`
   font-weight: bold;
+  color: black;
   font-size: 3rem;
   line-height: 1rem;
   padding-left: 2rem;
   padding-top: 1em;
   @media screen and (min-width: 768px) {
-    font-size: 5em;
     line-height: 1em;
     padding-top: 0.5em;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 7em;
-    letter-spacing: 0.5rem;
+    font-size: 5em;
   }
 `;
 const SubTitle = styled.h3`
   font-weight: bold;
+  font-family: "Libre Caslon Text", serif;
   font-size: 1.7em;
   line-height: 1em;
   @media screen and (min-width: 768px) {
@@ -64,6 +63,10 @@ const Wrapper = styled.div`
     width: 30%;
   }
 `;
+const A = styled.a`
+  color: #8c6034;
+  font-weight: bold;
+`;
 const Div = styled.div``;
 const ContactPage = () => (
   <Layout>
@@ -85,19 +88,19 @@ const ContactPage = () => (
             You can reach my office at (442) 500-5177, Monday – Friday between
             the hours. 8:00am – 5:30pm (PC)
             <br></br>
-            <a href="tel:4425005177">(442) 500-5177</a>
+            <A href="tel:4425005177">(442) 500-5177</A>
           </Article>
           <Article>
             <SubTitle>Email Discussion</SubTitle>
             <br></br>
             If you need to contact me through email, you can reach me at
-            <a href="mailto: Mindy@familyrootslaw.com">
+            <br></br>
+            <A href="mailto: Mindy@familyrootslaw.com">
               Mindy@familyrootslaw.com
-            </a>
+            </A>
           </Article>
         </Wrapper>
         <Div>
-          <Title>Me</Title>
           <Article>
             <SubTitle>Schedule A Consultation</SubTitle>
             <br></br>

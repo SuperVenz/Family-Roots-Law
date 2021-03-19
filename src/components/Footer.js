@@ -45,7 +45,7 @@ function Footer(props) {
   const { placeholderImage } = useStaticQuery(
     graphql`
       {
-        placeholderImage: file(relativePath: { eq: "Footer.png" }) {
+        placeholderImage: file(relativePath: { eq: "Footer.jpg" }) {
           childImageSharp {
             gatsbyImageData(
               width: 200

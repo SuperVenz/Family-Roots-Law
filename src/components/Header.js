@@ -16,6 +16,7 @@ const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
     flex-flow: row nowrap;
     padding-top: 0em;
+    padding-right: 1em;
   }
 `;
 const ContainerTop = styled.div`

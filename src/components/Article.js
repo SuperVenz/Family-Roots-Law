@@ -14,15 +14,16 @@ const Title = styled.h2`
   font-weight: bold;
   padding-bottom: 1em;
   font-size: 2.3em;
-  line-height: 1em;
+  line-height: 1.3em;
   @media screen and (min-width: 768px) {
     font-size: 3em;
     padding-bottom: 0.5em;
+    line-height: 1.2em;
   }
 `;
 const Text = styled.div`
   font-size: 1.2em;
-  line-height: 1.5em;
+  line-height: 2em;
   @media screen and (min-width: 768px) {
     line-height: 2em;
   }

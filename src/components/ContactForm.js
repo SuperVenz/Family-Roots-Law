@@ -18,7 +18,9 @@ const Label = styled.label`
     padding-bottom: 1em;
   }
 `;
-const Text = styled.p``;
+const Text = styled.p`
+  padding-top: 1em;
+`;
 const AreaLabel = styled.label`
   font-weight: bold;
   height: 120px;
@@ -28,7 +30,8 @@ const AreaLabel = styled.label`
   padding-bottom: 2em;
 `;
 const StringInput = styled.input`
-  padding: 1.5em;
+  padding: 1em;
+  font-size: 1em;
   padding-left: 1em;
   width: 80%;
   border: solid #e4e4e4 2px;

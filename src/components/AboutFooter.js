@@ -3,9 +3,13 @@ import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
 import { convertToBgImage } from "gbimage-bridge";
 import BackgroundImage from "gatsby-background-image";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { getImage } from "gatsby-plugin-image";
 const StyledBackgroundImage = styled((props) => <BackgroundImage {...props} />)`
   height: 50vh;
+  @media screen and (min-width: 768px) {
+    width: 60vw;
+    height: 50vw;
+  }
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -14,6 +18,9 @@ const Wrapper = styled.div`
   width: 100%;
   flex-direction: row nowrap;
   justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    font-size: 1em;
+  }
 `;
 const LeftList = styled.ul`
   align-self: flex-end;

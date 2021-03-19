@@ -13,6 +13,10 @@ const Label = styled.label`
   padding-bottom: 2em;
   font-weight: bold;
   padding-right: 2em;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    padding-bottom: 1em;
+  }
 `;
 const Text = styled.p``;
 const AreaLabel = styled.label`
@@ -36,6 +40,11 @@ const AreaText = styled.textarea`
   width: 80%;
   border: solid #e4e4e4 2px;
   border-radius: 12px;
+   width: 80%;
+  @media screen and (min-width: 768px) {
+    width: 90%;
+    padding: 1rem;
+  }
 `;
 const Submit = styled.button`
   padding-top: 0.5em;
@@ -49,6 +58,17 @@ const Submit = styled.button`
   font-size: 1.5em;
 
   width: 80%;
+  @media screen and (min-width: 768px) {
+    width: 98%;
+    padding: 1rem;
+  }
+`;
+const Row = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
 `;
 
 function ContactForm(props) {
@@ -117,68 +137,74 @@ function ContactForm(props) {
     >
       <input name="form-name" value="Netlify Rocks" type="hidden" />
       <input type="hidden" name="bot-field" />
-      <Label for="name">
-        <Text>Name</Text> <br></br>
-        <StringInput
-          type="text"
-          name="name"
-          placeholder="John Doe"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        ></StringInput>
-      </Label>
-      <Label for="address">
-        <Text>Home Address</Text> <br></br>
-        <StringInput
-          type="text"
-          name="address"
-          placeholder="123 Road Name Rd, San Diego Cal"
-          value={address}
-          onChange={(e) => setAddress(e.target.value)}
-        ></StringInput>
-      </Label>
-      <Label for="phone">
-        <Text>Phone Number</Text> <br></br>
-        <StringInput
-          type="tel"
-          name="phone"
-          placeholder="7607012235"
-          pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-        ></StringInput>
-      </Label>
-      <Label for="email">
-        <Text>Email</Text> <br></br>
-        <StringInput
-          type="email"
-          name="name"
-          placeholder="email@email.com"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        ></StringInput>
-      </Label>
-      <Label for="time">
-        <Text>Best Time Too Contact</Text> <br></br>
-        <StringInput
-          type="text"
-          name="time"
-          placeholder="monday-friday, 3-6pm etc"
-          value={time}
-          onChange={(e) => setTime(e.target.value)}
-        ></StringInput>
-      </Label>
-      <Label for="area">
-        <Text>Practice Area</Text>
-        <br></br>
-        <Select
-          options={options}
-          value={area}
-          onChange={handleSelect}
-          closeMenuOnScroll="true"
-        />
-      </Label>
-      <AreaLabel for="description">
+      <Row>
+        <Label htmlFor="name">
+          <Text>Name</Text> <br></br>
+          <StringInput
+            type="text"
+            name="name"
+            placeholder="John Doe"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          ></StringInput>
+        </Label>
+        <Label htmlFor="address">
+          <Text>Home Address</Text> <br></br>
+          <StringInput
+            type="text"
+            name="address"
+            placeholder="123 Road Name Rd, San Diego Cal"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+          ></StringInput>
+        </Label>
+      </Row>
+      <Row>
+        <Label htmlFor="phone">
+          <Text>Phone Number</Text> <br></br>
+          <StringInput
+            type="tel"
+            name="phone"
+            placeholder="7607012235"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          ></StringInput>
+        </Label>
+        <Label htmlFor="email">
+          <Text>Email</Text> <br></br>
+          <StringInput
+            type="email"
+            name="name"
+            placeholder="email@email.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          ></StringInput>
+        </Label>
+      </Row>
+      <Row>
+        <Label htmlFor="time">
+          <Text>Best Time Too Contact</Text> <br></br>
+          <StringInput
+            type="text"
+            name="time"
+            placeholder="monday-friday, 3-6pm etc"
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+          ></StringInput>
+        </Label>
+        <Label htmlFor="area">
+          <Text>Practice Area</Text>
+          <br></br>
+          <Select
+            options={options}
+            value={area}
+            onChange={handleSelect}
+            closeMenuOnScroll="true"
+          />
+        </Label>
+      </Row>
+      <AreaLabel htmlFor="description">
         <Text>Message</Text>
         <br></br>
         <AreaText

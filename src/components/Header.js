@@ -13,6 +13,10 @@ const Wrapper = styled.div`
   padding-top: 2em;
   background: black;
   color: white;
+  @media screen and (min-width: 768px) {
+    flex-flow: row nowrap;
+    padding-top: 0em;
+  }
 `;
 const ContainerTop = styled.div`
   display: flex;
@@ -31,6 +35,11 @@ const Tag = styled.p`
 `;
 const StyledLink = styled((props) => <Link {...props} />)`
   text-decoration: none;
+  @media screen and (min-width: 768px) {
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
 `;
 
 function Header(props) {

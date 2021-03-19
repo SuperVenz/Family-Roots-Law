@@ -12,6 +12,9 @@ const Navigation = styled.nav`
 const NavButton = styled.p`
   color: white;
   font-size: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 1.1em;
+  }
 `;
 const Div = styled.div`
   display: flex;

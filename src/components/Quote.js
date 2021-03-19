@@ -10,12 +10,18 @@ const Wrapper = styled.div`
     font-size: 2em;
   }
   padding-bottom: 3em;
+  @media screen and (min-width: 768px) {
+    width: 70%;
+  }
 `;
 const Line = styled.div`
   width: 3em;
   height: 13.5em;
   background: black;
   border: solid black 1px;
+  @media screen and (min-width: 768px) {
+    width: 2em;
+  }
 `;
 const Text = styled.div`
   align-text: center;
@@ -32,7 +38,7 @@ function Quote(props) {
       <Line />
       <Text>
         <p>{props.children}</p>
-        <Author> -- {props.author}</Author>
+        <Author>&#8213; {props.author}</Author>
       </Text>
     </Wrapper>
   );

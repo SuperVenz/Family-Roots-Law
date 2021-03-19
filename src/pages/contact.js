@@ -6,50 +6,116 @@ import Button from "../components/Button";
 import Layout from "../components/Layout";
 import ContactForm from "../components/ContactForm";
 
+const Main = styled.main`
+  @media screen and (min-width: 768px) {
+    overflow-y: hidden;
+  }
+`;
 const Title = styled.h1`
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 1rem;
-  padding-top: 3rem;
   padding-left: 2rem;
+  padding-top: 1em;
+  @media screen and (min-width: 768px) {
+    font-size: 5em;
+    line-height: 1em;
+    padding-top: 0.5em;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 7em;
+    letter-spacing: 0.5rem;
+  }
 `;
-const SubTitle = styled.span`
-  padding-bottom: 1em;
+const SubTitle = styled.h3`
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.7em;
   line-height: 1em;
+  @media screen and (min-width: 768px) {
+    font-size: 2em;
+  }
 `;
+const PcPic = styled.div`
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 30%;
+    height: 93vh;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+`;
+const PicWrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+const Row = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+`;
+const Wrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30%;
+  }
+`;
+const Div = styled.div``;
 const ContactPage = () => (
   <Layout>
-    <main>
-      <StaticImage
-        loading="eager"
-        placeholder="blurred"
-        src="../images/Contact.png"
-        alt="Picture Of Me"
-        layout="fullWidth"
-      />
-      <Title>Contact Me</Title>
-      <Article>
-        <SubTitle>Phone Call</SubTitle> <br></br>
-        You can reach my office at (442) 500-5177, Monday – Friday between the
-        hours. 8:00am – 5:30pm (PC)
-        <br></br>
-        <a href="tel:4425005177">(442) 500-5177</a>
-      </Article>
-      <Article>
-        <SubTitle>Email Discussion</SubTitle>
-        <br></br>
-        If you need to contact me through email, you can reach me at
-        <a href="mailto: Mindy@familyrootslaw.com"> Mindy@familyrootslaw.com</a>
-      </Article>
-      <Article>
-        <SubTitle>Schedule A Consultation</SubTitle>
-        <br></br>
-        Please provide the information below to schedule a consultation.
-      </Article>
-      <ContactForm />
-    </main>
+    <Main>
+      <PicWrapper>
+        <StaticImage
+          loading="eager"
+          placeholder="blurred"
+          src="../images/Contact.png"
+          alt="Picture Of Me"
+          layout="fullWidth"
+        />
+      </PicWrapper>
+      <Row>
+        <Wrapper>
+          <Title>Contact</Title>
+          <Article>
+            <SubTitle>Phone Call</SubTitle> <br></br>
+            You can reach my office at (442) 500-5177, Monday – Friday between
+            the hours. 8:00am – 5:30pm (PC)
+            <br></br>
+            <a href="tel:4425005177">(442) 500-5177</a>
+          </Article>
+          <Article>
+            <SubTitle>Email Discussion</SubTitle>
+            <br></br>
+            If you need to contact me through email, you can reach me at
+            <a href="mailto: Mindy@familyrootslaw.com">
+              Mindy@familyrootslaw.com
+            </a>
+          </Article>
+        </Wrapper>
+        <Div>
+          <Title>Me</Title>
+          <Article>
+            <SubTitle>Schedule A Consultation</SubTitle>
+            <br></br>
+            Please provide the information below to schedule a consultation.
+          </Article>
+          <ContactForm />
+        </Div>
+        <PcPic>
+          <StaticImage
+            loading="eager"
+            placeholder="blurred"
+            src="../images/ContactPc.png"
+            alt="Picture Of Me"
+            objectFit="cover"
+          />
+        </PcPic>
+      </Row>
+    </Main>
   </Layout>
 );
 

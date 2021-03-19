@@ -23,6 +23,9 @@ const Title = styled.h2`
 const Text = styled.div`
   font-size: 1.2em;
   line-height: 1.5em;
+  @media screen and (min-width: 768px) {
+    line-height: 2em;
+  }
 `;
 
 function Article(props) {

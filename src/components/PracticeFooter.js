@@ -8,7 +8,7 @@ const StyledBackgroundImage = styled((props) => <BackgroundImage {...props} />)`
   height: 50vh;
   @media screen and (min-width: 768px) {
     width: 60vw;
-    height: 50vw;
+    height: 35vw;
   }
 `;
 const Wrapper = styled.div`

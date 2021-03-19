@@ -28,7 +28,7 @@ const AreaLabel = styled.label`
   padding-bottom: 2em;
 `;
 const StringInput = styled.input`
-  padding: 1em;
+  padding: 1.5em;
   padding-left: 1em;
   width: 80%;
   border: solid #e4e4e4 2px;

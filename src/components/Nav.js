@@ -4,18 +4,13 @@ import { Link } from "gatsby";
 import Phone from "../images/Ui/Phone.svg";
 const Navigation = styled.nav`
   padding-top: 2em;
+  font-family: "Noto Sans JP", serif;
   display: flex;
   justify-content: space-around;
   padding-bottom: 2em;
   width: 100%;
 `;
-const NavButton = styled.p`
-  color: white;
-  font-size: 15px;
-  @media screen and (min-width: 768px) {
-    font-size: 1.1em;
-  }
-`;
+
 const Div = styled.div`
   display: flex;
   flex-grow: 3;
@@ -25,25 +20,32 @@ const Div = styled.div`
 `;
 const StyledLink = styled((props) => <Link {...props} />)`
   text-decoration: none;
+  color: white;
+  font-size: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 1.1em;
+  }
 `;
 
 function Nav(props) {
   return (
     <Navigation>
       <Div>
-        <StyledLink to="/about">
-          <NavButton>About</NavButton>
+        <StyledLink
+          to="/about"
+          activeClassName="active"
+          activeStyle={{ color: "#ffd75f" }}
+        >
+          About
         </StyledLink>
-        <StyledLink to="/services">
-          <NavButton>Practice Areas</NavButton>
+        <StyledLink to="/services" activeStyle={{ color: "#ffd75f" }}>
+          Practice Areas
         </StyledLink>
-        <StyledLink to="/contact">
-          <NavButton>Contact Me</NavButton>
+        <StyledLink to="/contact" activeStyle={{ color: "#ffd75f" }}>
+          Contact Me
         </StyledLink>
         <StyledLink to="/">
-          <NavButton>
-            <Phone />
-          </NavButton>
+          <Phone />
         </StyledLink>
       </Div>
     </Navigation>

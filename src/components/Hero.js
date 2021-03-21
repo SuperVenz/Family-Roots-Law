@@ -52,10 +52,10 @@ const Title = styled.h1`
 function Hero(props) {
   const { placeholderImage } = useStaticQuery(
     graphql`
-      query {
+      {
         placeholderImage: file(relativePath: { eq: "Hero.png" }) {
           childImageSharp {
-            gatsbyImageData(formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }

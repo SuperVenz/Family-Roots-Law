@@ -3,8 +3,7 @@ import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
 import { convertToBgImage } from "gbimage-bridge";
 import BackgroundImage from "gatsby-background-image";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import Layout from "./Layout";
+import { getImage } from "gatsby-plugin-image";
 
 const Wrapper = styled.div`
   padding-bottom: 2em;

@@ -57,7 +57,7 @@ const AboutPage = () => {
             />
           </PicWrapper>
           <Container>
-            <Article title="Hello, I am Mindy Galindo, your neighborhood estate planning and life lawyer.">
+            <Article title="Hello, I am Mindy Galindo, Your Family Legacy and Life Lawyer.">
               My goal is to be your trusted advisor and to help individuals,
               couples, and families consciously plan for the unknown, ensuring
               their loved ones are protected. I realize the legal community can

@@ -6,9 +6,12 @@ const Wrapper = styled.div`
   flex-flow: column nowrap;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   line-height: 1.5em;
-  padding-top: 1.5rem;
+  padding-top: 1em;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0em;
+  }
 `;
 const Title = styled.h2`
   font-weight: bold;

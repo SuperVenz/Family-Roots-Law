@@ -57,6 +57,9 @@ const TextBottom = styled.div`
     flex-flow: column nowrap;
     padding-left: 2em;
     width: 60%;
+  }
+    
+   @media screen and (min-width: 1500px) {
     padding-top:5em;
   }
 `;
@@ -139,7 +142,7 @@ const ServicesPage = () => (
             for an initial consultation. I can answer any questions you might
             have and explain how we can get started protecting your legacy.
           </Article>
-          <Button tag="Contact Me" />
+          <Button tag="Contact Me" route="/contact" />
         </TextBottom>
         <PracticeFooter />
       </RowBottom>

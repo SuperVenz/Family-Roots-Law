@@ -34,6 +34,10 @@ const Text = styled.div`
     flex-flow: column nowrap;
     padding-left: 2em;
     width: 60%;
+    
+  }
+    }
+   @media screen and (min-width: 1500px) {
     padding-top:5em;
   }
 `;

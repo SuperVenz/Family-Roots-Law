@@ -66,6 +66,9 @@ const TextFooter = styled.div`
     flex-flow: column nowrap;
     padding-left: 2em;
     width: 60%;
+    
+  }
+   @media screen and (min-width: 1500px) {
     padding-top:5em;
   }
 `;
@@ -77,7 +80,16 @@ const H3 = styled.h3`
     line-height: 1.5em;
   }
 `;
+const PicWrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    width: 90%;
+  }
+  @media screen and (min-width: 1500px) {
+    width: 100%;
+  }
+`;
 const StyleFooter = styled((props) => <Footer {...props} />)``;
+
 // markup
 const IndexPage = () => {
   return (
@@ -109,13 +121,15 @@ const IndexPage = () => {
               will be protected.
             </Quote>
           </Split>
-          <StaticImage
-            loading="eager"
-            placeholder="blurred"
-            src="../images/Family.png"
-            alt="Picture of Family"
-            layout="constrained"
-          />
+          <PicWrapper>
+            <StaticImage
+              loading="eager"
+              placeholder="blurred"
+              src="../images/Family.png"
+              alt="Picture of Family"
+              layout="constrained"
+            />
+          </PicWrapper>
         </Container>
         <Article title="Build A Custom Experience">
           <Row>

@@ -2,7 +2,6 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 import Article from "../components/Article";
-import Button from "../components/Button";
 import Layout from "../components/Layout";
 import ContactForm from "../components/ContactForm";
 
@@ -21,7 +20,7 @@ const Title = styled.h1`
     line-height: 1em;
     padding-top: 0.5em;
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1500px) {
     font-size: 5em;
   }
 `;

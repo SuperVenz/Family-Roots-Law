@@ -191,7 +191,7 @@ function ContactForm(props) {
           <StringInput
             type="text"
             name="time"
-            placeholder="monday-friday, 3-6pm etc"
+            placeholder="Monday-Friday, 3-6pm etc"
             value={time}
             onChange={(e) => setTime(e.target.value)}
           ></StringInput>

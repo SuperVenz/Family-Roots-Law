@@ -28,8 +28,11 @@ const Text = styled.div`
 `;
 const Title = styled.h2`
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.3em;
   padding-bottom: 5px;
+  @media screen and (min-width: 768px) {
+    font-size: 1.5em;
+  }
 `;
 const Tag = styled.p`
   font-size: 0.7em;

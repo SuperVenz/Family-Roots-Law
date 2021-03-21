@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   line-height: 1.5em;
   padding-top: 1em;
   @media screen and (min-width: 768px) {
-    padding-bottom: 0em;
+    padding-bottom: 2em;
   }
 `;
 const Title = styled.h2`

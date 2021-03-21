@@ -39,6 +39,7 @@ const PcPic = styled.div`
     display: flex;
     width: 30%;
     height: 93vh;
+    align-self: center;
   }
   @media screen and (min-width: 1024px) {
   }

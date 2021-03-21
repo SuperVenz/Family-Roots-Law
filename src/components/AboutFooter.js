@@ -67,7 +67,7 @@ function AboutFooter(props) {
       <Wrapper>
         <LeftList>
           <LI>PO Box</LI>
-          <LI>4474 Oceanside</LI>
+          <LI>4774 Oceanside</LI>
           <LI>Califorina,</LI>
           <LI>92052</LI>
         </LeftList>

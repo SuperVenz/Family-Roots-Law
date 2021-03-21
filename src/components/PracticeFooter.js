@@ -47,11 +47,7 @@ function PracticeFooter(props) {
       {
         placeholderImage: file(relativePath: { eq: "PracticeFooter.png" }) {
           childImageSharp {
-            gatsbyImageData(
-              width: 200
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }

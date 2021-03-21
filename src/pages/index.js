@@ -140,13 +140,13 @@ const IndexPage = () => {
               to design a custom experience that is tailored to your particular
               situation and your particular needs.
               <ButtonWrapper>
-                <Button tag="Learn More" />
+                <Button tag="Learn More" route="/services" />
               </ButtonWrapper>
             </Text>
           </Row>
         </Article>
         <ButtonHider>
-          <Button tag="Learn More" />
+          <Button tag="Learn More" route="/services" />
         </ButtonHider>
         <Row>
           <TextFooter>
@@ -156,7 +156,7 @@ const IndexPage = () => {
               have and explain how we can get started protecting your legacy.
             </Article>
             <ButtonWrapper>
-              <Button tag="Contact Me" />
+              <Button tag="Contact Me" route="/contact" />
             </ButtonWrapper>
           </TextFooter>
           <StyleFooter pic="Footer.png" />

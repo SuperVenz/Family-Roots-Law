@@ -47,11 +47,7 @@ function AboutFooter(props) {
       {
         placeholderImage: file(relativePath: { eq: "AboutFooter.png" }) {
           childImageSharp {
-            gatsbyImageData(
-              width: 200
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }

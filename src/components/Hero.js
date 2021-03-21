@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { convertToBgImage } from "gbimage-bridge";
 import BackgroundImage from "gatsby-background-image";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Layout from "./Layout";
 
 const Wrapper = styled.div`
   padding-bottom: 2em;
@@ -55,11 +56,7 @@ function Hero(props) {
       query {
         placeholderImage: file(relativePath: { eq: "Hero.png" }) {
           childImageSharp {
-            gatsbyImageData(
-              width: 200
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
+            gatsbyImageData(formats: [AUTO, WEBP, AVIF])
           }
         }
       }
@@ -72,6 +69,7 @@ function Hero(props) {
   return (
     <Wrapper>
       <StyledBackgroundImage
+        Layout="fullWidth"
         Tag="section"
         // Spread bgImage into BackgroundImage:
         {...bgImage}

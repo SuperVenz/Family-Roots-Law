@@ -66,6 +66,12 @@ const Wrapper = styled.div`
 const A = styled.a`
   color: #8c6034;
   font-weight: bold;
+  padding-left: ;
+`;
+const APadding = styled.a`
+  color: #8c6034;
+  font-weight: bold;
+  padding-left: 0.5em;
 `;
 const Div = styled.div``;
 const ContactPage = () => (
@@ -93,11 +99,10 @@ const ContactPage = () => (
           <Article>
             <SubTitle>Email Discussion</SubTitle>
             <br></br>
-            If you need to contact me through email, you can reach me at
-            <br></br>
-            <A href="mailto: Mindy@familyrootslaw.com">
+            If you need to contact me through email, you can reach me at:
+            <APadding href="mailto: Mindy@familyrootslaw.com">
               Mindy@familyrootslaw.com
-            </A>
+            </APadding>
           </Article>
         </Wrapper>
         <Div>

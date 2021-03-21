@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
+
 const Wrapper = styled.div`
   padding-left: 2em;
   padding-bottom: 5em;
@@ -15,10 +17,12 @@ const CustomButton = styled.button`
   color: white;
   font-size: 1.5em;
 `;
-function Button({ tag }) {
+function Button({ tag, route }) {
   return (
     <Wrapper>
-      <CustomButton>{tag}</CustomButton>
+      <Link to={route}>
+        <CustomButton>{tag}</CustomButton>
+      </Link>
     </Wrapper>
   );
 }

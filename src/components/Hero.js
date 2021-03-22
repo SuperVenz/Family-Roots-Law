@@ -53,7 +53,7 @@ function Hero(props) {
   const { placeholderImage } = useStaticQuery(
     graphql`
       {
-        placeholderImage: file(relativePath: { eq: "Hero.png" }) {
+        placeholderImage: file(relativePath: { eq: "AboutFooter.png" }) {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }

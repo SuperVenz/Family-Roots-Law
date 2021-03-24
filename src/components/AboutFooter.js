@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { convertToBgImage } from "gbimage-bridge";
 import BackgroundImage from "gatsby-background-image";
 import { getImage } from "gatsby-plugin-image";
+import Layout from "./Layout";
 const StyledBackgroundImage = styled((props) => <BackgroundImage {...props} />)`
   height: 50vh;
   @media screen and (min-width: 768px) {

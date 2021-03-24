@@ -61,7 +61,7 @@ function PracticeFooter(props) {
     <StyledBackgroundImage
       Tag="section"
       // Spread bgImage into BackgroundImage:
-      {...bgImage}
+      fluid="{...bgImage}"
       preserveStackingContext
     >
       <Wrapper>

@@ -4,12 +4,12 @@ import { useStaticQuery, graphql } from "gatsby";
 import { convertToBgImage } from "gbimage-bridge";
 import BackgroundImage from "gatsby-background-image";
 import { getImage } from "gatsby-plugin-image";
-import Layout from "./Layout";
 const StyledBackgroundImage = styled((props) => <BackgroundImage {...props} />)`
-  height: 50vh;
+  height: 60vh;
   @media screen and (min-width: 768px) {
     width: 60vw;
-    height: 35vw;
+    height: 50vw;
+    background-size: cover;
   }
 `;
 const Wrapper = styled.div`
@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   width: 100%;
   flex-direction: row nowrap;
   justify-content: space-between;
+  font-color: black;
   @media screen and (min-width: 768px) {
     font-size: 1em;
   }
@@ -37,25 +38,25 @@ const RightList = styled.ul`
   padding-right: 3em;
   padding-bottom: 1em;
 `;
-const LI = styled.li``;
+const LI = styled.li`
+  color: black;
+`;
 const A = styled.a`
-  color: white;
+  color: black;
 `;
 
 function AboutFooter(props) {
-  const { placeholderImage } = useStaticQuery(
-    graphql`
-      {
-        placeholderImage: file(relativePath: { eq: "AboutFooter.png" }) {
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-          }
+  const data = useStaticQuery(graphql`
+    {
+      file(relativePath: { eq: "AboutFooter.png" }) {
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, quality: 90, formats: AUTO)
         }
       }
-    `
-  );
+    }
+  `);
 
-  const image = getImage(placeholderImage);
+  const image = getImage(data.file);
   const bgImage = convertToBgImage(image);
 
   return (

@@ -7,6 +7,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
+import MobileHero from "../components/MobileHero";
 
 const Wrapper = styled.main`
   @media screen and (min-width: 768px) {
@@ -35,7 +36,12 @@ const MobileHider = styled.div`
     padding-right: 5em;
   }
 `;
-
+const Hider = styled.div`
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+`;
 const Row = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
@@ -88,6 +94,11 @@ const PicWrapper = styled.div`
     width: 100%;
   }
 `;
+const MobileHeroWrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
 const StyleFooter = styled((props) => <Footer {...props} />)``;
 
 // markup
@@ -95,7 +106,12 @@ const IndexPage = () => {
   return (
     <Layout>
       <Wrapper>
-        <Hero />
+        <Hider>
+          <Hero />
+        </Hider>
+        <MobileHeroWrapper>
+          <MobileHero />
+        </MobileHeroWrapper>
         <Container>
           <Split>
             <Article title="A Legacy That Lasts Forever">

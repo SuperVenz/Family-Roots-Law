@@ -56,11 +56,11 @@ const Title = styled.h1`
   }
 `;
 
-function Hero(props) {
+function MobileHero(props) {
   const { placeholderImage } = useStaticQuery(
     graphql`
       {
-        placeholderImage: file(relativePath: { eq: "Hero.png" }) {
+        placeholderImage: file(relativePath: { eq: "MobileHero.png" }) {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
@@ -95,4 +95,4 @@ function Hero(props) {
     </Wrapper>
   );
 }
-export default Hero;
+export default MobileHero;

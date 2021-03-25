@@ -42,26 +42,28 @@ const A = styled.a`
 `;
 
 function PracticeFooter(props) {
-  const { placeholderImage } = useStaticQuery(
-    graphql`
-      {
-        placeholderImage: file(relativePath: { eq: "PracticeFooter.png" }) {
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-          }
+  const data = useStaticQuery(graphql`
+    {
+      file(relativePath: { eq: "PracticeFooter.png" }) {
+        childImageSharp {
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            placeholder: BLURRED
+            quality: 90
+            formats: AUTO
+          )
         }
       }
-    `
-  );
-
-  const image = getImage(placeholderImage);
+    }
+  `);
+  const image = getImage(data.file);
   const bgImage = convertToBgImage(image);
 
   return (
     <StyledBackgroundImage
       Tag="section"
       // Spread bgImage into BackgroundImage:
-      fluid="{...bgImage}"
+      {...bgImage}
       preserveStackingContext
     >
       <Wrapper>

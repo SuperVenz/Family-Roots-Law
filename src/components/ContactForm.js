@@ -122,6 +122,7 @@ function ContactForm(props) {
         phone: phone,
         time: time,
         area: area,
+        description: description,
       }),
     })
       .then(() => navigate("/thankyou"))
@@ -144,6 +145,7 @@ function ContactForm(props) {
         <Label htmlFor="name">
           <Text>Name</Text> <br></br>
           <StringInput
+            required
             type="text"
             name="name"
             placeholder="John Doe"
@@ -166,6 +168,7 @@ function ContactForm(props) {
         <Label htmlFor="phone">
           <Text>Phone Number</Text> <br></br>
           <StringInput
+            required
             type="tel"
             name="phone"
             placeholder="7607012235"
@@ -177,6 +180,7 @@ function ContactForm(props) {
         <Label htmlFor="email">
           <Text>Email</Text> <br></br>
           <StringInput
+            required
             type="email"
             name="name"
             placeholder="email@email.com"
@@ -189,6 +193,7 @@ function ContactForm(props) {
         <Label htmlFor="time">
           <Text>Best Time Too Contact</Text> <br></br>
           <StringInput
+            required
             type="text"
             name="time"
             placeholder="Monday-Friday, 3-6pm etc"
@@ -204,6 +209,7 @@ function ContactForm(props) {
             value={area}
             onChange={handleSelect}
             closeMenuOnScroll="true"
+            required
           />
         </Label>
       </Row>

@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Button from "../components/Button";
 import Layout from "../components/Layout";
 import AboutFooter from "../components/AboutFooter";
-
+import { Helmet } from "react-helmet";
 const Margin = styled.div`
   padding-left: 2em;
 `;
@@ -44,7 +44,21 @@ const Text = styled.div`
 
 const AboutPage = () => {
   return (
-    <Layout>
+    <Layout
+      pageMeta={{
+        title: "About",
+        keywords: [
+          "Probate",
+          "Trust",
+          "Lawyer",
+          "About",
+          "Family Roots Law",
+          "San Diego Ca",
+        ],
+        description:
+          "Trust and estate planning that would ensure your family’s future is safe.",
+      }}
+    >
       <main>
         <Row>
           <PicWrapper>

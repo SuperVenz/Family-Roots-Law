@@ -36,9 +36,10 @@ const SubTitle = styled.h3`
 const PcPic = styled.div`
   display: none;
   @media screen and (min-width: 768px) {
+    padding-left: 5em;
     display: flex;
     width: 30%;
-    height: 93vh;
+    height: 60vh;
     align-self: center;
   }
   @media screen and (min-width: 1024px) {
@@ -75,7 +76,21 @@ const APadding = styled.a`
 `;
 const Div = styled.div``;
 const ContactPage = () => (
-  <Layout>
+  <Layout
+    pageMeta={{
+      title: "Contact",
+      keywords: [
+        "Probate",
+        "Trust",
+        "Lawyer",
+        "About",
+        "Family Roots Law",
+        "San Diego Ca",
+      ],
+      description:
+        "Trust and estate planning that ensures your family’s future is safe for generations to come.",
+    }}
+  >
     <Main>
       <PicWrapper>
         <StaticImage

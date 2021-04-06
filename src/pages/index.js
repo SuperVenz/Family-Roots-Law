@@ -104,7 +104,21 @@ const StyleFooter = styled((props) => <Footer {...props} />)``;
 // markup
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout
+      pageMeta={{
+        title: "Home",
+        keywords: [
+          "Probate",
+          "Trust",
+          "Lawyer",
+          "About",
+          "Family Roots Law",
+          "San Diego Ca",
+        ],
+        description:
+          "Trust and estate planning that ensures your family’s future is safe for generations to come.",
+      }}
+    >
       <Wrapper>
         <Hider>
           <Hero />

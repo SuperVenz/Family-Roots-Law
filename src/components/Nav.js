@@ -29,7 +29,7 @@ const StyledLink = styled((props) => <Link {...props} />)`
     font-size: 1.1em;
   }
 `;
-
+const A = styled.a``;
 function Nav(props) {
   return (
     <Navigation>
@@ -48,7 +48,9 @@ function Nav(props) {
           Contact Me
         </StyledLink>
         <StyledLink to="/">
-          <Phone />
+          <A href="tel:4425005177">
+            <Phone />
+          </A>
         </StyledLink>
       </Div>
     </Navigation>

@@ -5,7 +5,6 @@ import styled from "styled-components";
 import Button from "../components/Button";
 import Layout from "../components/Layout";
 import AboutFooter from "../components/AboutFooter";
-import { Helmet } from "react-helmet";
 const Margin = styled.div`
   padding-left: 2em;
 `;

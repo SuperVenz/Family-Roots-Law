@@ -38,7 +38,7 @@ const RightList = styled.ul`
   padding-right: 3em;
   padding-bottom: 1em;
 `;
-const LI = styled.li`
+const Li = styled.li`
   color: black;
 `;
 const A = styled.a`
@@ -68,22 +68,22 @@ function AboutFooter(props) {
     >
       <Wrapper>
         <LeftList>
-          <LI>630 Alta Vista Drive</LI>
-          <LI>Suite 203 - A</LI>
-          <LI>Vista CA,</LI>
-          <LI>92084</LI>
+          <Li>630 Alta Vista Drive</Li>
+          <Li>Suite 203 - A</Li>
+          <Li>Vista CA,</Li>
+          <Li>92084</Li>
         </LeftList>
         <RightList>
-          <LI>
+          <Li>
             <A href="tel:4425005177">(442) 500-5177</A>
-          </LI>
-          <LI>
+          </Li>
+          <Li>
             <A href="mailto: Mindy@familyrootslaw.com">
               Mindy@familyrootslaw.com
             </A>
-          </LI>
-          <LI>Mindy Galindo, Your Family</LI>
-          <LI>Legacy, and Life Lawyer</LI>
+          </Li>
+          <Li>Mindy Galindo, Your Family</Li>
+          <Li>Legacy, and Life Lawyer</Li>
         </RightList>
       </Wrapper>
     </StyledBackgroundImage>

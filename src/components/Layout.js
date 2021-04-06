@@ -4,9 +4,26 @@ import "../static/cssReset.css";
 import "../static/global.css";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-
+import { useStaticQuery, graphql } from "gatsby";
 const Wrapper = styled.div``;
 export default function Layout({ children, pageMeta }) {
+  const data = useStaticQuery(graphql`
+    {
+      file(relativePath: { eq: "icon.png" }) {
+        childImageSharp {
+          fluid {
+            base64
+            tracedSVG
+            srcWebp
+            srcSetWebp
+            originalImg
+            originalName
+          }
+          gatsbyImageData
+        }
+      }
+    }
+  `);
   return (
     <Wrapper>
       <Header />
@@ -16,6 +33,12 @@ export default function Layout({ children, pageMeta }) {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Alec Venzor" />
+        {/* Social Media */}
+        <meta name="image" content={data.file.childImageSharp.fluid} />
+        <meta property="og:image" content={data.file.childImageSharp.fluid} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={data.file.childImageSharp.fluid} />
+
         <html lang="en" />
 
         {/* The rest we set dynamically with props */}

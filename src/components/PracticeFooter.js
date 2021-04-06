@@ -68,10 +68,10 @@ function PracticeFooter(props) {
     >
       <Wrapper>
         <LeftList>
-          <LI>PO Box</LI>
-          <LI>4774 Oceanside</LI>
-          <LI>Califorina,</LI>
-          <LI>92052</LI>
+          <LI>630 Alta Vista Drive</LI>
+          <LI>Suite 203 - A</LI>
+          <LI>Vista CA,</LI>
+          <LI>92084</LI>
         </LeftList>
         <RightList>
           <LI>

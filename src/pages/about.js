@@ -116,7 +116,7 @@ const AboutPage = () => {
               me. Together, we can begin the process of estate planning that
               would ensure your family’s future is safe.
             </Article>
-            <Button tag="Contact Me" />
+            <Button tag="Contact Me" to="/contact" />
           </Text>
           <AboutFooter />
         </Row>

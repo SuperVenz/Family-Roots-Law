@@ -184,7 +184,7 @@ const IndexPage = () => {
               to design a custom experience that is tailored to your particular
               situation and your particular needs.
               <ButtonWrapper>
-                <Button tag="Learn More" route="/services" />
+                <Button tag="services" route="/services" />
               </ButtonWrapper>
             </Text>
           </Row>

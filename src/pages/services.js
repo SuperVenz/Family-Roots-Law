@@ -43,24 +43,24 @@ const RowBottom = styled.div`
 `;
 const Text = styled.div`
   @media screen and (min-width: 768px) {
-    flex-direction: reverse-row
+    flex-direction: reverse-row;
     display: flex;
     flex-flow: column nowrap;
     width: 50%;
-    padding-right:5%;
+    padding-right: 5%;
   }
 `;
 const TextBottom = styled.div`
   @media screen and (min-width: 768px) {
-    flex-direction: reverse-row
+    flex-direction: reverse-row;
     display: flex;
     flex-flow: column nowrap;
     padding-left: 2em;
     width: 60%;
   }
-    
-   @media screen and (min-width: 1500px) {
-    padding-top:5em;
+
+  @media screen and (min-width: 1500px) {
+    padding-top: 5em;
   }
 `;
 const PicWrapper = styled.div`

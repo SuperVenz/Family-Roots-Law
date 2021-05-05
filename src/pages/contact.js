@@ -67,7 +67,6 @@ const Wrapper = styled.div`
 const A = styled.a`
   color: #8c6034;
   font-weight: bold;
-  padding-left: ;
 `;
 const APadding = styled.a`
   color: #8c6034;

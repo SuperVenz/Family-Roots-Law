@@ -67,15 +67,14 @@ const Text = styled.div`
 `;
 const TextFooter = styled.div`
   @media screen and (min-width: 768px) {
-        flex-direction: reverse-row
+    flex-direction: reverse-row;
     display: flex;
     flex-flow: column nowrap;
     padding-left: 2em;
     width: 60%;
-    
   }
-   @media screen and (min-width: 1500px) {
-    padding-top:5em;
+  @media screen and (min-width: 1500px) {
+    padding-top: 5em;
   }
 `;
 const H3 = styled.h3`
@@ -190,7 +189,7 @@ const IndexPage = () => {
           </Row>
         </Article>
         <ButtonHider>
-          <Button tag="Learn More" route="/services" />
+          <Button tag="services" route="/services" />
         </ButtonHider>
         <Row>
           <TextFooter>

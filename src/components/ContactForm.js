@@ -39,11 +39,11 @@ const StringInput = styled.input`
 `;
 const AreaText = styled.textarea`
   padding: 1rem;
-  height 4em;
+  height: 4em;
   width: 80%;
   border: solid #e4e4e4 2px;
   border-radius: 12px;
-   width: 80%;
+  width: 80%;
   @media screen and (min-width: 768px) {
     width: 90%;
     padding: 1rem;

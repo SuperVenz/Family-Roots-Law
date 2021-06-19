@@ -134,7 +134,7 @@ const ServicesPage = () => (
             distributing and disbursing a trust.
           </Article>
           <Article>
-            <SubTitle>Limited Conservatorships and Conservatorships</SubTitle>
+            <SubTitle>Conservatorship</SubTitle>
             <br />
             In cases where a family member turns 18, but still requires legal
             representation, I can provide this service and make sure that things
@@ -151,7 +151,7 @@ const ServicesPage = () => (
       <Block />
       <RowBottom>
         <TextBottom>
-          <Article title="We Can Protect Your Family">
+          <Article title="Free Consultation ">
             To begin the process of protecting your family, please contact me
             for an initial consultation. I can answer any questions you might
             have and explain how we can get started protecting your legacy.

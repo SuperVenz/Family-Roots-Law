@@ -61,7 +61,7 @@ function Header(props) {
             height={40}
           />
           <Text>
-            <Title>Family Roots Law, A.P.C</Title>
+            <Title>Family Roots Law A.P.C</Title>
             <Tag>Your Family Legacy and Life Lawyer</Tag>
           </Text>
         </ContainerTop>

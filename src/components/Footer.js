@@ -68,8 +68,7 @@ function Footer(props) {
         <LeftList>
           <Li>630 Alta Vista Drive</Li>
           <Li>Suite 203 - A</Li>
-          <Li>Vista CA,</Li>
-          <Li>92084</Li>
+          <Li>Vista CA, 92084</Li>
         </LeftList>
         <RightList>
           <Li>

@@ -173,23 +173,21 @@ const IndexPage = () => {
             </MobileHider>
             <Text>
               <H3>Made for your Family</H3>
-              Estate planning is an intimate, family matter. This is why I like
-              to visit my clients in their own homes and really get to know
-              them. I want you to know and trust me, so you can be confident I
-              am working on your behalf. My experience in this field has taught
-              me that my work is about relationships; therefore, I have made
-              relationship building the hallmark of my approach. Once I
-              establish a personal relationship with you, I will work with you
-              to design a custom experience that is tailored to your particular
-              situation and your particular needs.
+              Estate planning is an intimate, family matter. I want you to know
+              and trust me, so you can be confident I am working on your behalf.
+              My experience in this field has taught me that my work is about
+              relationships; therefore, I have made relationship building the
+              hallmark of my approach. I will work with you to design a custom
+              experience that is tailored to your particular situation and your
+              particular needs.
               <ButtonWrapper>
-                <Button tag="services" route="/services" />
+                <Button tag="Services" route="/services" />
               </ButtonWrapper>
             </Text>
           </Row>
         </Article>
         <ButtonHider>
-          <Button tag="services" route="/services" />
+          <Button tag="Services" route="/services" />
         </ButtonHider>
         <Row>
           <TextFooter>

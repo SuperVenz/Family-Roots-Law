@@ -26,19 +26,23 @@ const LeftList = styled.ul`
   align-self: flex-end;
   line-height: 1.7em;
   color: white;
-  padding-left: 3em;
+  padding-left: 1em;
   padding-bottom: 1em;
 `;
 const RightList = styled.ul`
   align-self: flex-end;
   line-height: 1.7em;
   color: white;
-  padding-right: 3em;
+  padding-right: 1em;
   padding-bottom: 1em;
 `;
-const Li = styled.li``;
+const Li = styled.li`
+  margin-top: 10px;
+  height: 24px;
+`;
 const A = styled.a`
   color: white;
+  height: 48px;
 `;
 
 function PracticeFooter(props) {

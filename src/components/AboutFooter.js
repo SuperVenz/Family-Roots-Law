@@ -40,6 +40,7 @@ const RightList = styled.ul`
 `;
 const Li = styled.li`
   color: black;
+  margin-top: 10px;
 `;
 const A = styled.a`
   color: black;

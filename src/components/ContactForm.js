@@ -125,7 +125,7 @@ function ContactForm(props) {
         description: description,
       }),
     })
-      .then(() => navigate("/thankyou"))
+      .then(() => navigate("/thank-you"))
       .catch((error) => alert(error));
   };
   return (

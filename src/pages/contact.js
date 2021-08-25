@@ -77,7 +77,7 @@ const Div = styled.div``;
 const ContactPage = () => (
   <Layout
     pageMeta={{
-      title: "Contact",
+      title: "Contact Us Today",
       keywords: [
         "Probate",
         "Trust",

@@ -105,7 +105,7 @@ const IndexPage = () => {
   return (
     <Layout
       pageMeta={{
-        title: "Home",
+        title: "Family Roots Law,",
         keywords: [
           "Probate",
           "Trust",

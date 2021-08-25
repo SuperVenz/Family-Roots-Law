@@ -82,7 +82,7 @@ const PcPic = styled.div`
 const ServicesPage = () => (
   <Layout
     pageMeta={{
-      title: "Services",
+      title: "Estate Law Services",
       keywords: [
         "Probate",
         "Trust",

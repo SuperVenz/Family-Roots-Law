@@ -148,7 +148,7 @@ const IndexPage = () => {
               rest assured that your legacy will be protected.
             </Article>
             <Quote author="Mindy Galindo">
-              With my personal apporach, you can rest assured that your legacy
+              With my personal approach, you can rest assured that your legacy
               will be protected.
             </Quote>
           </Split>

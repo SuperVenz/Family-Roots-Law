@@ -92,7 +92,7 @@ const ServicesPage = () => (
         "San Diego Ca",
       ],
       description:
-        "Trust and estate planning that ensures your family’s future is safe for generations to come.",
+        "Living Trust and Estate Planning that ensures your family’s future is safe for generations to come.",
     }}
   >
     <main>
@@ -116,7 +116,7 @@ const ServicesPage = () => (
           />
         </PcPic>
         <Text>
-          <Title>Practice Areas</Title>
+          <Title>Trust and Estate Services</Title>
           <Article>
             <SubTitle>Estate Planning</SubTitle>
             <br />

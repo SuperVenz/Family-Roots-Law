@@ -50,9 +50,10 @@ const Text = styled.div`
 const Title = styled.h1`
   color: white;
   font-weight: bold;
-  padding-bottom: 2em;
+  padding-bottom: 10em;
   @media screen and (min-width: 768px) {
     font-size: 6em;
+    padding-bottom: 2em;
   }
 `;
 

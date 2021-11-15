@@ -19,7 +19,7 @@ const Line = styled.div`
   height: 16.5em;
   background: black;
   border: solid black 1px;
-  @media screen and (min-width: 768px max-width: 1020px) {
+  @media screen and (min-width: 768px) {
     height: 25em;
     width: 2em;
   }
@@ -28,11 +28,10 @@ const Line = styled.div`
   }
 `;
 const Text = styled.div`
-  align-text: center;
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 1em;
-  @media screen and (min-width: 768px max-width: 1020px) {
+  @media screen and (min-width: 768px) {
     line-height: 2.5em;
   }
   @media screen and (min-width: 1024px) {
@@ -41,6 +40,7 @@ const Text = styled.div`
 `;
 const Author = styled.div`
   padding-top: 1em;
+  font-size: 32px;
 `;
 function Quote(props) {
   return (

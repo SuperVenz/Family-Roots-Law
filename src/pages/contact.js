@@ -114,8 +114,8 @@ const ContactPage = () => (
             <SubTitle>Email Discussion</SubTitle>
             <br></br>
             If you need to contact me through email, you can reach me at:
-            <APadding href="mailto: Mindy@familyrootslaw.com">
-              Mindy@familyrootslaw.com
+            <APadding href="mailto: Support@familyrootslaw.com">
+              Support@familyrootslaw.com
             </APadding>
           </Article>
         </Wrapper>

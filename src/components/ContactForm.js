@@ -37,6 +37,12 @@ const StringInput = styled.input`
   border: solid #e4e4e4 2px;
   border-radius: 12px;
 `;
+const StyledSelect = styled(Select)`
+  padding: 0.5em;
+  font-size: 1em;
+  width: 80%;
+  border-radius: 12px;
+`;
 const AreaText = styled.textarea`
   padding: 1rem;
   height: 4em;
@@ -204,7 +210,7 @@ function ContactForm(props) {
         <Label htmlFor="area">
           <Text>Practice Area</Text>
           <br></br>
-          <Select
+          <StyledSelect
             options={options}
             value={area}
             onChange={handleSelect}

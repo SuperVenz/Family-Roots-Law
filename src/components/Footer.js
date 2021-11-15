@@ -70,9 +70,9 @@ function Footer(props) {
     >
       <Wrapper>
         <LeftList>
-          <Li>630 Alta Vista Drive</Li>
-          <Li>Suite 203 - A</Li>
-          <Li>Vista CA, 92084</Li>
+          <Li>380 S. Melrose Drive</Li>
+          <Li>Suite 357</Li>
+          <Li>Vista, CA 92081</Li>
         </LeftList>
         <RightList>
           <Li>

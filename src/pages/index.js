@@ -110,12 +110,14 @@ const IndexPage = () => {
           "Probate",
           "Trust",
           "Lawyer",
-          "About",
+          "family lawyer",
           "Family Roots Law",
           "San Diego Ca",
+          "Estates",
+          "conservatorship",
         ],
         description:
-          "Trust and estate planning that ensures your family’s future is safe for generations to come.",
+          "Trust and estate planning, Get all your legal needs sorted by a qualified family lawyer. We offer personal and professional services to help you with your estate planning.",
       }}
     >
       <Wrapper>
@@ -127,23 +129,23 @@ const IndexPage = () => {
         </MobileHeroWrapper>
         <Container>
           <Split>
-            <Article title="A Legacy That Lasts Forever">
+            <Article title="A Living Trust That Lasts Forever">
               There are few things in life that matter to us more than our
-              legacy. We spend our lives working and building something we hope
-              to pass on to our loved ones. It takes a lifetime to build a
-              legacy, and we want to know that our legacy is safe and secure.
-              However, when the time comes to divide an estate, the process can
-              be stressful, emotional, and uncomfortable. It some cases, there
-              are unforeseen pitfalls that blindside families and make the
-              situation extremely challenging. That is why I want to start
-              working with you now to plan your legacy and to make sure I can be
-              your advocate when that day comes. I want to meet with you
-              regularly to discuss your plans, then when the moment arrives, I
-              want to step in and handle this matter so your family members do
-              not have to go through the headaches, piles of paperwork, and
-              uncomfortable issues that often arise during this crucial time.
-              With my personal approach, you can rest assured that your legacy
-              will be protected.
+              legacy and trust. We spend our lives working and building
+              something we hope to pass on to our loved ones. It takes a
+              lifetime to build a legacy, and we want to know that our estate,
+              trust, and will is safe and secure. However, when the time comes
+              to divide an estate, the process can be stressful, emotional, and
+              uncomfortable. In some cases, there are unforeseen pitfalls that
+              blindside families and can make your situation extremely
+              challenging. That is why I want to start working with you now to
+              plan your trust and to make sure I can be your advocate when that
+              day comes. I want to meet with you regularly to discuss your
+              plans, for when the moment arrives. I will step in and handle this
+              matter so your family members do not have to go through the
+              headaches, piles of paperwork, and uncomfortable issues that often
+              arise during this crucial time. With my personal approach, you can
+              rest assured that your legacy will be protected.
             </Article>
             <Quote author="Mindy Galindo">
               With my personal apporach, you can rest assured that your legacy

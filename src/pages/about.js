@@ -26,18 +26,23 @@ const PicWrapper = styled.div`
     width: 200%;
   }
 `;
+const PicWrapperMegan = styled.div`
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+`;
 const Text = styled.div`
   @media screen and (min-width: 768px) {
-        flex-direction: reverse-row
+    flex-direction: reverse-row;
     display: flex;
     flex-flow: column nowrap;
     padding-left: 2em;
     width: 60%;
-    
   }
-    }
-   @media screen and (min-width: 1500px) {
-    padding-top:5em;
+
+  @media screen and (min-width: 1500px) {
+    padding-top: 5em;
   }
 `;
 
@@ -106,6 +111,36 @@ const AboutPage = () => {
                 height={100}
               />
             </Margin>
+          </Container>
+        </Row>
+        <Row>
+          <PicWrapperMegan>
+            <StaticImage
+              loading="eager"
+              placeholder="blurred"
+              src="../images/Megan.jpg"
+              alt="Picture Of Me"
+              layout="constrained"
+            />
+          </PicWrapperMegan>
+          <Container>
+            <Article title="Megan Gooing, Of Counsel Attorney and Counselor at Law, focuses on estate and trust litigation">
+              Megan Gooing, Of Counsel Attorney and Counselor at Law, focuses on
+              estate and trust litigation, beneficiary representation, probate,
+              estate planning, trust funding, and conservatorships. Megan Gooing
+              is a licensed California Bar Association attorney and a graduate
+              of Chapman University, Dale E. Fowler School of Law. Megan also
+              has a degree in Marketing from New Mexico State University. While
+              in law school, Megan received the CALI award for her work in the
+              Elder Law Clinic, which focused on estate planning,
+              conservatorships, and guardianship nominations. Megan is
+              passionate about serving her community, which is why she has
+              dedicated her career to helping people solve their problems with
+              understanding and personal attention. Because of Megan’s estate
+              planning work, she offers a unique perspective to estate and trust
+              litigation. She takes pride in fighting for her clients and
+              approaches all areas of the law with determination.
+            </Article>
           </Container>
         </Row>
         <Row>

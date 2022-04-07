@@ -49,7 +49,9 @@ function Nav(props) {
         </StyledLink>
         <StyledLink to="/">
           <A href="tel:4425005177" aria-label="Call">
-            <Phone />
+            <>
+              <Phone />
+            </>
           </A>
         </StyledLink>
       </Div>

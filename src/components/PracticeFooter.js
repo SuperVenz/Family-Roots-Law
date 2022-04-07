@@ -73,7 +73,7 @@ function PracticeFooter(props) {
       <Wrapper>
         <LeftList>
           <Li>380 S. Melrose Drive</Li>
-          <Li>Suite 357</Li>
+          <Li>Suite 349</Li>
           <Li>Vista, CA 92081</Li>
         </LeftList>
         <RightList>

@@ -129,7 +129,7 @@ const ServicesPage = () => (
             I will help you plan how you want to pass on your Family Wealth.
           </Article>
           <Article>
-            <SubTitle>Trust and Probate Admininstration</SubTitle> <br />I can
+            <SubTitle>Trust and Probate Administration</SubTitle> <br />I can
             handle all of the legal matters related to opening probate and to
             distributing and disbursing a trust.
           </Article>
